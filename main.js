@@ -3,6 +3,10 @@ const printToDom = (divId,stringToPrint)=>{
     document.getElementById(divId).innerHTML = stringToPrint;
 }
 ;
+const inputFields = document.getElementsByClassName('input-field');
+for (i = 0; i <inputFields.length; i++){
+    inputFields[i].setAttribute( "autocomplete", "off" );
+}
 // Encodes string to uft16 values
 const utf16Encoder = (input)=>{
     let encoded = [];
