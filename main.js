@@ -35,10 +35,10 @@ for (i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', (e) => {
         let translation =e.target.previousSibling.previousSibling.value
         if (e.target.id === 'text-button') {
-            printToDom('print-here', utf16Encoder(translation));
+            printToDom('encoded-print', utf16Encoder(translation));
         }
         else if (e.target.id === 'uni-button'){
-            printToDom('print-here', uft61Decoder(translation));
+            printToDom('decoded-print', uft61Decoder(translation));
         }
     })
 }
