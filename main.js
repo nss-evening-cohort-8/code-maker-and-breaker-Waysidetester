@@ -9,7 +9,6 @@ const utf16Encoder = (input)=>{
     let newArray = input.split('');
     for (i = 0; i < newArray.length; i++) {
         let charCode = input.charCodeAt(i);
-        console.log(charCode);
         encoded.push(charCode);
     }
     return encoded
@@ -21,7 +20,6 @@ const uft61Decoder = (input)=>{
     let newArray = input.split(',');
     for (i = 0; i < newArray.length; i++) {
         let char = String.fromCharCode(newArray[i]);
-        console.log(char);
         decoded.push(char);
     }
     return decoded.join('');
